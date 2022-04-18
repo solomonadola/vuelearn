@@ -10,9 +10,7 @@ const vw = Vue.createApp({
 
     },
     methods: {
-        fullName() {
-            return `${this.firstName} ${this.middleName} ${this.lastName}`
-        },
+
         increment() {
             this.age++;
 
@@ -28,8 +26,15 @@ const vw = Vue.createApp({
         updateMiddleName(event) {
             this.middleName = event.target.value
 
-        }
+        },
+
 
 
     },
+    computed: {
+        fullName() {
+            console.log('the computed property was called')
+            return `${this.firstName} ${this.middleName} ${this.lastName} `
+        },
+    }
 }).mount('#app');
