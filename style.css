@@ -1,0 +1,12 @@
+body{
+    font-size: 2rem;
+}
+input[type='text']{
+    display: block;
+    margin: 10px;
+    font-size: 2rem;
+    padding: 10px;
+}
+[v-cloak]{
+    display: none;
+}
