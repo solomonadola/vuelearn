@@ -1,0 +1,45 @@
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+input[type='text'],input[type='number']{
+    display: block;
+    margin: 10px;
+    font-size: 2rem;
+    padding: 10px;
+}
+[v-cloak]{
+    display: none;
+}
+.cont{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgb(19, 175, 40);
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+label{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    display: block;
+}
+select{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.purple{
+    background-color: purple;
+}
+.black{
+    color: #121213;
+}
+.yellow{
+    color: rgb(219, 238, 9);
+}
+.green{
+    color: rgb(0, 133, 0);
+}

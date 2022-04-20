@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>learn vue</title>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <label for=""> <input type="checkbox" name="check" id="" v-model="isPurple">purple</label>
+        <select name="select" id="" v-model="selected">
+            <option value="black">black</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+        </select>
+        <input type="number" v-model='size'>
+        <div class="cont" :class="[selected,circle_classes]"
+            :style="style">
+            <p>Hi!</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3 "></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

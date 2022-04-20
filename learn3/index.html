@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>vue learn3</title>
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <p v-if="mode==1">showing v-if directive content</p>
+        <template v-else-if="mode==2">
+            <p>bonus content</p>
+            <h1>v-else-if</h1>
+
+        </template>
+        <p v-else>v-else</p>
+        <i v-show="mode==1">v-show</i>
+        <select name="" id="" v-model="mode">
+            <option value="1">v-if</option>
+            <option value="2">v-else if</option>
+            <option value="3"> v-else</option>
+        </select>
+        <ul>
+            <li v-for="(bird,index) in birds" :class="bird">{{ bird }}-{{ index }}</li>
+        </ul>
+        <hr>
+        <ul>
+            <li v-for="person in people">
+                <div v-for="(value,key,index) in person">
+                    {{ key }}:{{ value }}-index:{{ index }}
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@3 "></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

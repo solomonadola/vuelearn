@@ -1,0 +1,33 @@
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding-top: 10px;
+    background-color: rgb(188, 183, 178);
+}
+
+#app {
+    text-align: center;
+}
+
+#app button {
+    background-color: rgb(110, 149, 240);
+    border-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.card {
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid rgb(152, 149, 149);
+    background-color: rgb(255, 255, 255);
+}

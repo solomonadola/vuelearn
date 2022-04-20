@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn 5 css3 perspective playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2>css3 perspective playground</h2>
+        <main>
+            <section>
+                <div class="settings-container">
+                    <label for="">perspective:{{ perspective }}px</label>
+                    <input type="range" name="" id="" min="0" max="999" v-model="perspective" />
+                    <label for="">rotateX:{{ rotateX }}deg</label>
+                    <input type="range" name="" id="" min="-180" max="180" v-model="rotateX" />
+                    <label for="">rotateY:{{ rotateY }}deg</label>
+                    <input type="range" name="" id="" min="-180" max="180" v-model="rotateY" />
+                    <label for="">rotateZ:{{ rotateZ }}deg</label>
+                    <input type="range" name="" id="" min="-180" max="180" v-model="rotateZ" />
+
+                    <button type="button" @click.prevent="reset">reset</button>
+                    <button type="button" @click.prevent="copy">copy</button>
+                </div>
+            </section>
+            <section class="output">
+                <div class="box-container">
+                    <div class="box" :style="box"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
